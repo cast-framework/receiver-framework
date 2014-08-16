@@ -1,0 +1,14 @@
+{
+  "name": "CastFrameworkExample",
+  "subdomain": "orangepickel-example",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "version": "0.0.0-48",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "express": "4.7.x"
+  }
+}
