@@ -1,4 +1,4 @@
-Note: This example app runs on NodeJS, but the receiver framework is just a JS file that will run on any web server. (see <b>Setup</b> for information about how to use the framework in your own projects)
+Note: This example app runs on NodeJS, but the receiver framework is just a JS file that will run on any web server. (see <b>Receiver Framework</b> for information about how to use the framework in your own projects)
 
 Running This Example
 =======================
@@ -14,8 +14,10 @@ To run this example application locally
     <li>Visit <b>http://localhost:9999</b> in your browser</li>
 </ol>
 
+Receiver Framework
+==================
 Setup
-=====
+-----
 The receiver component of our cast framework is a single file. (js/framework/CastFramework.js)
 
 You can easily include it in your own HTML page just like you would include any javascript file:
@@ -31,7 +33,7 @@ $(CastFramework).ready(function() {
 At this point, you will have a working chromecast receiver....except it won't actually do anything.
 
 Listening for commands
-======================
+----------------------
 
 Our framework works using commands. All messages between the devices and the chromecast are json objects that look like this:
 ```js
@@ -51,7 +53,7 @@ $(CastFramework).on("doSomething", function(event, clientId, content) {
 Just add one of these event listeners for each command the receiver is listening for, and you're good to go!
 
 Sending/Broadcasting Messages
-=============================
+-----------------------------
 
 Send a message to a particular device:
 ```js
