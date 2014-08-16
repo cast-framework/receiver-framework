@@ -1,10 +1,25 @@
-Setup
-==================
+Note: This example app runs on NodeJS, but the receiver framework is just a JS file that will run on any web server. (see <b>Setup</b> for information about how to use the framework in your own projects)
 
+Running This Example
+=======================
+To run this example application locally
+<ol>
+    <li>Install NodeJS (http://nodejs.org/)</li>
+    <li>In the root directory of this project, install express:
+        <pre><code>$ npm install express</pre></code>
+    </li>
+    <li>Run the project:
+        <pre><code>$ node app.js</pre></code>
+    </li>
+    <li>Visit <b>http://localhost:9999</b> in your browser</li>
+</ol>
+
+Setup
+=====
 The receiver component of our cast framework is a single file. (js/framework/CastFramework.js)
 
 You can easily include it in your own HTML page just like you would include any javascript file:
-```
+```html
 <script src="path/to/CastFramework.js"></script>
 ```
 Then, you need to add the following javascript to your page (or include it in a separate file):
