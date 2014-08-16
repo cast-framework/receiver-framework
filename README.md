@@ -22,6 +22,11 @@ The receiver component of our cast framework is a single file. (js/framework/Cas
 
 You can easily include it in your own HTML page just like you would include any javascript file:
 ```html
+<!-- include Google's chromecast receiver code -->
+<script type="text/javascript" src="//www.gstatic.com/cast/sdk/libs/receiver/2.0.0/cast_receiver.js"></script>
+<!-- include jquery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- include the framework -->
 <script src="path/to/CastFramework.js"></script>
 ```
 Then, you need to add the following javascript to your page (or include it in a separate file):
